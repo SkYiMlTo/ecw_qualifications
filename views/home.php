@@ -24,7 +24,7 @@
                     <a class="nav-link" href="products.php">Products</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Login</a>
+                    <a class="nav-link" href="login.php">Login</a>
                 </li>
             </ul>
         </div>
@@ -62,7 +62,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Organic Honeycomb</h5>
                     <p class="card-text">Pure, raw honeycomb straight from the hive.</p>
-                    <a href="products.php" class="btn btn-warning">Shop Now</a>
+                    <a href="products.php#products" class="btn btn-warning">Shop Now</a>
                 </div>
             </div>
         </div>
@@ -72,7 +72,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Wildflower Honey</h5>
                     <p class="card-text">Delicious honey made from wildflowers.</p>
-                    <a href="products.php" class="btn btn-warning">Shop Now</a>
+                    <a href="products.php#products" class="btn btn-warning">Shop Now</a>
                 </div>
             </div>
         </div>
@@ -82,7 +82,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Pure Beeswax</h5>
                     <p class="card-text">Natural beeswax for crafts and skincare.</p>
-                    <a href="products.php" class="btn btn-warning">Shop Now</a>
+                    <a href="products.php#products" class="btn btn-warning">Shop Now</a>
                 </div>
             </div>
         </div>
@@ -91,7 +91,7 @@
 
 <!-- Footer -->
 <footer class="bg-dark text-light text-center p-3">
-    <p>&copy; 2024 Bee & Honey Store. All rights reserved.</p>
+    <p>&copy; 2024 Honey Store. All rights reserved.</p>
 </footer>
 
 <!-- Bootstrap JS -->
