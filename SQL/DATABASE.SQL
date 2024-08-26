@@ -1,12 +1,9 @@
 create table users
 (
-    username varchar(32) not null,
-    password varchar(40) not null,
-    id       int,
-    primary key (username, id),
-    constraint unique_username
-        unique (username)
+    username VARCHAR(32) NOT NULL,
+    password VARCHAR(40) NOT NULL,
+    id       INT         AUTO_INCREMENT,
+    PRIMARY KEY (id),
+    CONSTRAINT unique_username
+        UNIQUE (username)
 );
-
-alter table users
-    modify id int auto_increment;

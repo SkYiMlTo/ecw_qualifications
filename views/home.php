@@ -36,7 +36,7 @@ session_start();
 </div>
 
 <!-- Featured Products Section -->
-<div class="container my-5">
+<div class="container my-5 pb-5">
     <h2 class="text-center">Featured Products</h2>
     <div class="row text-center">
         <div class="col-md-4">
