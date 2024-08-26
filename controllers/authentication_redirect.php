@@ -3,7 +3,7 @@ session_start();
 
 if($_SESSION['__userSession']['idUser']){
     if($_GET['page'] == 'profile')
-        header('Location: ../views/profile.php');
+        header('Location: ../views/pin.php');
     if($_GET['page'] == 'cart')
         header('Location: ../views/cart.php');
     if($_GET['page'] == 'support')
