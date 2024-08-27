@@ -1,2 +1,2 @@
-INSERT INTO users (username, password) VALUES ('sky', 'root');
-INSERT INTO users (username, password) VALUES ('toto', 'toto');
+INSERT INTO users (username, password, acc_type) VALUES ('sky', 'root', 'ADMIN_ACC');
+INSERT INTO users (username, password, acc_type) VALUES ('toto', 'toto', 'USER_ACC');
