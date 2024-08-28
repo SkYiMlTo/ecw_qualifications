@@ -30,7 +30,7 @@
                     </li>
                     ';
                 }
-                if(isset($_SESSION['__userSession']['idUser']) && isset ($_SESSION['__userSession']['username'])){
+                if(isset($_SESSION['__userSession']['idUser']) && isset ($_SESSION['__userSession']['username']) && ($_SESSION['__userSession']['accType'] === "OBVIOUS_HONEY_ACC_1")){
                     echo'                <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         '.$_SESSION['__userSession']['username'].'

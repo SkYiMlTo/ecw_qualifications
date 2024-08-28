@@ -5,7 +5,7 @@ session_start();
 <?php include "../controllers/authentication_checker.php" ?>
 
 <?php
-if(isset($_SESSION['__userSession']['accType']) && $_SESSION['__userSession']['accType'] == 'ADMIN_ACC'){
+if(isset($_SESSION['__userSession']['accType']) && $_SESSION['__userSession']['accType'] !== 'USER_ACC'){
     header('Location: ../views/home.php');
 }
 ?>

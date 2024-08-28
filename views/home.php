@@ -14,6 +14,9 @@ session_start();
 
 <?php include "navbar.php" ?>
 
+<?php
+    if ($_SESSION['__userSession']['accType'] !== "OBVIOUS_HONEY_ACC_1"){
+        echo'
 <!-- Hero Section -->
 <div class="container-fluid p-5 bg-warning text-center text-white">
     <h1>Welcome to the Honey Store</h1>
@@ -29,7 +32,7 @@ session_start();
         </div>
         <div class="col-md-6">
             <h2>About Us</h2>
-            <p>At Bee & Honey Store, we are passionate about bees and the sweet products they create. Our mission is to bring you the finest honey and bee-related products, sourced directly from the best beekeepers. Whether you're looking for pure honey, beeswax products, or beekeeping equipment, we've got you covered.</p>
+            <p>At Bee & Honey Store, we are passionate about bees and the sweet products they create. Our mission is to bring you the finest honey and bee-related products, sourced directly from the best beekeepers. Whether you\'re looking for pure honey, beeswax products, or beekeeping equipment, we\'ve got you covered.</p>
             <a href="products.php" class="btn btn-warning">Explore Our Products</a>
         </div>
     </div>
@@ -70,7 +73,11 @@ session_start();
             </div>
         </div>
     </div>
-</div>
+</div>';
+    }
+
+?>
+
 
 <?php include "footer.php" ?>
 
