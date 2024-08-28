@@ -19,7 +19,7 @@ session_start();
     <div class="row justify-content-center">
         <div class="col-md-6">
             <h2 class="text-center mb-4">Login</h2>
-            <form action="../controllers/controller.php?func=login" method="POST">
+            <form action="../controllers/db_controller.php?func=login" method="POST">
                 <?php
                 if($_GET) {
                 if (isset($_GET['noConnect'])) {
