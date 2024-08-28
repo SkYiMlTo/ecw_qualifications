@@ -30,8 +30,12 @@
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item" href="../controllers/authentication_redirect.php?page=profile">Profile</a></li>
-                        <li><a class="dropdown-item" href="../controllers/authentication_redirect.php?page=cart">Cart</a></li>
-                        <li><a class="dropdown-item" href="../controllers/authentication_redirect.php?page=support">Support</a></li>
+                        <li><a class="dropdown-item" href="../controllers/authentication_redirect.php?page=cart">Cart</a></li>';
+                if(!(isset($_SESSION['__userSession']['accType']) && $_SESSION['__userSession']['accType'] == 'ADMIN_ACC')) {
+                    echo '
+                        <li><a class="dropdown-item" href="../controllers/authentication_redirect.php?page=support">Support</a></li>';
+                }
+                    echo'
                         <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item" href="../controllers/disconnect.php">Logout</a></li>
                     </ul>

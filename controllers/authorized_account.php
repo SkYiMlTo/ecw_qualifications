@@ -1,5 +1,8 @@
 <?php
-session_start();
+if(!isset($_SESSION))
+{
+    session_start();
+}
 include 'credentials.php';
 
 function db_connect(): false|mysqli
