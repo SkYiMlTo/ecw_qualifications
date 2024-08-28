@@ -17,6 +17,9 @@ session_start();
 <!-- Navbar -->
 <?php include "navbar.php" ?>
 
+<?php
+if (isset ($_SESSION['__userSession']['accType']) && $_SESSION['__userSession']['accType'] !== "ADMIN_HONEY_ACC_0"){
+    echo'
 <!-- Main Container -->
 <div class="container-fluid mt-4 mb-5">
     <div class="row">
@@ -278,7 +281,14 @@ session_start();
     </div>
 </div>
 
-<div class="mt-4">
+<div class="mt-4">';
+    }
+else{
+    echo'
+    <img src="youknow.jpg" />
+';
+}
+?>
 <?php include "footer.php" ?>
 </div>
 

@@ -16,7 +16,7 @@
 
                 <!-- Dropdown -->
                 <?php
-                if(isset($_SESSION['__userSession']['accType']) && $_SESSION['__userSession']['accType'] == 'ADMIN_ACC'){
+                if(isset($_SESSION['__userSession']['accType']) && ($_SESSION['__userSession']['accType'] == 'ADMIN_ACC' || $_SESSION['__userSession']['accType'] === "ADMIN_HONEY_ACC_0")){
                     echo'
                     <li class="nav-item">
                         <a class="nav-link" href="admin.php">Admin pannel</a>
