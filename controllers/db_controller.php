@@ -22,13 +22,12 @@ function login(): void
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    $sql = "SELECT * FROM users WHERE username = '" . $username . "'";
-    $result = $dbconnect->query($sql)->fetch_all();
-    if($result && $password == $result[0][1]) {
+    $result = $dbconnect->execute_query("SELECT * FROM users WHERE username = ?", [$username])->fetch_assoc();
+    if($result && $password == $result['password']) {
         $arraySession = array(
             "username" => $username,
-            "idUser" => $result[0][3],
-            "accType" => $result[0][2],
+            "idUser" => $result['id'],
+            "accType" => $result['acc_type'],
         );
         $_SESSION['__userSession'] = $arraySession;
         if( $result[0][2] === "OBVIOUS_HONEY_ACC_0" ){

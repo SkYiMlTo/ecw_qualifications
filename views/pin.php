@@ -30,7 +30,7 @@ session_start();
     <div class="card p-4 shadow" style="max-width: 600px;">
         <h2 class="text-center mb-4">Enter Your 8-Digit PIN</h2>
         <p>You need to enter your personal pin to access your data.</p>
-        <form id="pinForm" action="../controllers/controller.php?func=enterPin" method="POST" >
+        <form id="pinForm" action="../controllers/db_controller.php?func=enterPin" method="POST" >
             <div class="d-flex justify-content-between mb-3">
                 <input type="text" maxlength="1" name="1" oninput="this.value=this.value.replace(/[^0-9]/g,'');" class="form-control text-center mx-2" required autofocus style="width: 40px;height: 40px;">
                 <input type="text" maxlength="1" name="2" oninput="this.value=this.value.replace(/[^0-9]/g,'');" class="form-control text-center mx-2" required autofocus style="width: 40px;height: 40px;">
