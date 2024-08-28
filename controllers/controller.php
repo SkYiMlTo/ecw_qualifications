@@ -51,7 +51,7 @@ function enterPin()
         return;
     }
     $pin = $_POST["1"] . $_POST["2"] . $_POST["3"] . $_POST["4"] . $_POST["5"] . $_POST["6"] . $_POST["7"] . $_POST["8"];
-    if($_SESSION['__userSession']['username'] == 'sky' and $pin == '12345678'){
+    if($_SESSION['__userSession']['username'] == 'jasmith' and $pin == 'HIR*0dVS!MygZ'){
         $_SESSION['pinPass']['pin'] = true;
         header('Location: ../views/profile.php');
     } else {
