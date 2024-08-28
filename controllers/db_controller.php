@@ -30,12 +30,12 @@ function login(): void
             "accType" => $result['acc_type'],
         );
         $_SESSION['__userSession'] = $arraySession;
-        if( $result[0][2] === "OBVIOUS_HONEY_ACC_0" ){
+        if( $result['acc_type'] === "OBVIOUS_HONEY_ACC_0" ){
             $_SESSION['__userSession']= null;
             session_destroy();
             header('Location: ../views/403.php');
         }
-        elseif($result[0][2] === "OBVIOUS_HONEY_ACC_2" ){
+        elseif($result['acc_type'] === "OBVIOUS_HONEY_ACC_2" ){
             sleep(10);
             header('Location: ../views/home.php');
         }

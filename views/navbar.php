@@ -23,14 +23,14 @@
                     </li>
                     ';
                 }
-                if(isset($_SESSION['__userSession']['accType']) && $_SESSION['__userSession']['accType'] == 'ADMIN_HONEY_ACC_1'){
+                if(isset($_SESSION['__userSession']['accType']) && isset ($_SESSION['__userSession']['accType']) && $_SESSION['__userSession']['accType'] == 'ADMIN_HONEY_ACC_1'){
                     echo'
                     <li class="nav-item">
                         <a class="nav-link" href="admin.php">Admin pannel</a>
                     </li>
                     ';
                 }
-                if(isset($_SESSION['__userSession']['idUser']) && isset ($_SESSION['__userSession']['username']) && ($_SESSION['__userSession']['accType'] === "OBVIOUS_HONEY_ACC_1")){
+                if(isset($_SESSION['__userSession']['idUser']) && isset ($_SESSION['__userSession']['username']) && isset ($_SESSION['__userSession']['accType']) && ($_SESSION['__userSession']['accType'] === "OBVIOUS_HONEY_ACC_1")){
                     echo'                <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         '.$_SESSION['__userSession']['username'].'

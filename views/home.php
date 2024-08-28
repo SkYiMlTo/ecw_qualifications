@@ -15,7 +15,7 @@ session_start();
 <?php include "navbar.php" ?>
 
 <?php
-    if ($_SESSION['__userSession']['accType'] !== "OBVIOUS_HONEY_ACC_1"){
+    if (!isset ($_SESSION['__userSession']['accType']) || (isset ($_SESSION['__userSession']['accType']) && $_SESSION['__userSession']['accType'] !== "OBVIOUS_HONEY_ACC_1")){
         echo'
 <!-- Hero Section -->
 <div class="container-fluid p-5 bg-warning text-center text-white">
