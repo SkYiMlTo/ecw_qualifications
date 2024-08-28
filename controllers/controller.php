@@ -27,8 +27,8 @@ function login(): void
     if($result && $password == $result[0][1]) {
         $arraySession = array(
             "username" => $username,
-            "idUser" => $result[0][2],
-            "accType" => $result[0][3],
+            "idUser" => $result[0][3],
+            "accType" => $result[0][2],
         );
         $_SESSION['__userSession'] = $arraySession;
         header('Location: ../views/home.php');

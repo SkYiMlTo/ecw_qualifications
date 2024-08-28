@@ -23,9 +23,19 @@ function is_account_authorized(): void
 //    }
 //    $sql = "SELECT acc_type FROM users WHERE id = '" . $_SESSION['__userSession']['idUser'] . "'";
 //    $result = $dbconnect->query($sql)->fetch_all()[0];
-    if($_SESSION['__userSession']['accType'] !== "ADMIN_ACC"){
-        header('Location: ../views/403.php');
+
+
+    if($_SESSION['__userSession']['accType'] === "ADMIN_ACC") {
+
     }
+    elseif($_SESSION['__userSession']['accType'] === "ADMIN_HONEY_ACC_1"){
+            header('Location: ../not-views/admin.php');
+    }else{
+            header('Location: ../views/403.php');
+    }
+    //if($_SESSION['__userSession']['accType'] !== "ADMIN_ACC") {
+    //    header('Location: ../views/403.php');
+    //}
 }
 
 is_account_authorized();
