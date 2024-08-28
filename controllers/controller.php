@@ -31,7 +31,14 @@ function login(): void
             "accType" => $result[0][2],
         );
         $_SESSION['__userSession'] = $arraySession;
-        header('Location: ../views/home.php');
+        if( $result[0][2] === "OBVIOUS_HONEY_ACC_0" ){
+            $_SESSION['__userSession']= null;
+            session_destroy();
+            header('Location: ../views/403.php');
+        }
+        else{
+            header('Location: ../views/home.php');
+        }
     } else {
         header('Location: ../views/login.php?loginError=true');
     }
