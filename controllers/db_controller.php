@@ -35,6 +35,10 @@ function login(): void
             session_destroy();
             header('Location: ../views/403.php');
         }
+        elseif($result[0][2] === "OBVIOUS_HONEY_ACC_2" ){
+            sleep(10);
+            header('Location: ../views/home.php');
+        }
         else{
             header('Location: ../views/home.php');
         }
