@@ -17,7 +17,7 @@ if ($_SESSION['__userSession']['accType'] !== "ADMIN_HONEY_ACC_1") {
 <body class="d-flex flex-column min-vh-100">
 
 <!-- Navbar -->
-<?php include "../views/navbar.php" ?>
+<?php include "./navbar.php" ?>
 
 <!-- Main Container -->
 <div class="container-fluid mt-4 mb-5">
