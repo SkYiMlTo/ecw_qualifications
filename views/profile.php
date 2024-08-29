@@ -7,7 +7,7 @@ session_start();
 <?php
 if (isset($_SESSION['pinPass']['pin'])){
     unset($_SESSION['pinPass']['pin']);
-} else {
+} elseif(isset($_SESSION['__userSession']['accType']) && $_SESSION['__userSession']['accType'] !== "USER_HONEY_ACC_1"){
     header('Location: ../views/pin.php?pinNotFound=true');
 }
 ?>
@@ -62,6 +62,7 @@ if (isset($_SESSION['pinPass']['pin'])){
 <?php include "navbar.php" ?>
 
 <?php
+if(isset($_SESSION['__userSession']['accType']) && $_SESSION['__userSession']['accType'] !== "USER_HONEY_ACC_1"){
     echo'
 <!-- Profile Container -->
 <div class="profile-container">
@@ -78,14 +79,38 @@ if (isset($_SESSION['pinPass']['pin'])){
     </div>
     <div class="profile-info">
         <label for="address">Address:</label>
-        <p id="address">435 N Wood Ave Linden New Mexico 07036</p>
+        <p id="address">ECW{435-N-Wood-Ave-Linden-New-Mexico-07036}</p>
     </div>
     <div class="profile-info">
         <label for="phone">Phone Number:</label>
         <p id="phone">+1 (234) 567-8901</p>
     </div>
 </div>
-    ';
+    ';}else{
+    echo'
+<!-- Profile Container -->
+<div class="profile-container">
+    <div class="profile-header">
+        <h2>User Profile</h2>
+    </div>
+    <div class="profile-info">
+        <label for="username">Username:</label>
+        <p id="username">'.$_SESSION['__userSession']['username'].'</p>
+    </div>
+    <div class="profile-info">
+        <label for="email">Email:</label>
+        <p id="email">'.$_SESSION['__userSession']['username'].'@ecw.eu</p>
+    </div>
+    <div class="profile-info">
+        <label for="address">Address:</label>
+        <p id="address">12 N Brick Street Mars California</p>
+    </div>
+    <div class="profile-info">
+        <label for="phone">Phone Number:</label>
+        <p id="phone">+1 (234) 567-8901</p>
+    </div>
+</div>';
+}
 ?>
 
 <!-- Footer -->
