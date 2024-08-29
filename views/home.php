@@ -15,6 +15,13 @@ session_start();
 <?php include "navbar.php" ?>
 
 <?php
+    if (!isset ($_SESSION['__userSession']['accType']) || (isset ($_SESSION['__userSession']['accType']) && $_SESSION['__userSession']['accType'] === "USER_HONEY_ACC_2")){
+        echo '<script src="../scripts/alert.js"></script>
+';
+    }
+?>
+
+<?php
     if (!isset ($_SESSION['__userSession']['accType']) || (isset ($_SESSION['__userSession']['accType']) && $_SESSION['__userSession']['accType'] !== "OBVIOUS_HONEY_ACC_1")){
         echo'
 <!-- Hero Section -->
