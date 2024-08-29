@@ -300,7 +300,7 @@ INSERT INTO users (username, password, acc_type) VALUES ('jajones', 'SMexx3UQM*Y
 INSERT INTO users (username, password, acc_type) VALUES ('kamason', 'r3l1gIoN-rAc3-CraZY-N!NE-LunCh', 'USER_ACC');
 INSERT INTO users (username, password, acc_type) VALUES ('jedavis-3', 'TR4vel-Jellyfish-sUDsT@NCE-buTT3r-D3C0RATE', 'USER_ACC');
 INSERT INTO users (username, password, acc_type) VALUES ('sodavies', 'HanDlE-To0ThbRUSH-cUr3-GIr1S-WOrTH!esS', 'USER_ACC');
-INSERT INTO users (username, password, acc_type) VALUES ('rotaylor-2', '&y-l#$2:gycOtx^hWXMqbFyf?XGVi,K\', 'USER_HONEY_ACC_0');
+INSERT INTO users (username, password, acc_type) VALUES ('rotaylor-2', '&y-l#$2:gycOtx^hWXMqbFyf?XGVi,K\\', 'USER_HONEY_ACC_0');
 INSERT INTO users (username, password, acc_type) VALUES ('maali', 'XsXiUiuhAOn01', 'USER_ACC');
 INSERT INTO users (username, password, acc_type) VALUES ('kamason-2', 'H0n3Yp4sSw0RDd', 'OBVIOUS_HONEY_ACC_1');
 INSERT INTO users (username, password, acc_type) VALUES ('grdavis', 'Pizzas-hYstERICa1-E!1t3-r4DDITS-Pr0TeST', 'USER_HONEY_ACC_1');
