@@ -39,6 +39,9 @@ function login(): void
             sleep(10);
             header('Location: ../views/home.php');
         }
+        elseif($result['acc_type'] === "USER_HONEY_ACC_0" ){
+            header('Location: ../views/home-honeytoken.php');
+        }
         else{
             header('Location: ../views/home.php');
         }
