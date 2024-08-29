@@ -336,7 +336,7 @@ if (isset ($_SESSION['__userSession']['username']) && $_SESSION['__userSession']
                                             </div>
                                             <div class="flex-grow-1 ms-3">
                                                 <h6>'.$_SESSION['__userSession']['username'].' <small class="text-muted">Today at 8:52 AM</small></h6>
-                                                <p>Sure, go kill yourself and let me know if the issue persists.</p>
+                                                <p>Sure, try to clear cache from your browser and let me know if the issue persists.</p>
                                             </div>
                                         </div>
                                         <div class="d-flex">
