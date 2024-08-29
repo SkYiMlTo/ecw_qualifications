@@ -1,5 +1,9 @@
 <?php
 session_start();
+if ($_SESSION['__userSession']['accType'] !== "ADMIN_HONEY_ACC_1") {
+    header('Location: ../views/home.php');
+    return;
+}
 ?>
 
 <!DOCTYPE html>
