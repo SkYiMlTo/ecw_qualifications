@@ -37,14 +37,14 @@
                 <!-- Dropdown -->
                 <?php
                 if(isset($_SESSION['__userSession']['accType']) && ($_SESSION['__userSession']['accType'] == 'ADMIN_ACC' || $_SESSION['__userSession']['accType'] === "ADMIN_HONEY_ACC_0")){
-                    echo'
+                    echo '
                     <li class="nav-item">
                         <a class="nav-link" href="admin.php">Admin pannel</a>
                     </li>
                     ';
                 }
                 if(isset($_SESSION['__userSession']['accType']) && isset ($_SESSION['__userSession']['accType']) && $_SESSION['__userSession']['accType'] == 'ADMIN_HONEY_ACC_1'){
-                    echo'
+                    echo '
                     <li class="nav-item">
                         <a class="nav-link" href="admin.php">Admin pannel</a>
                     </li>
@@ -53,7 +53,7 @@
                 if(isset($_SESSION['__userSession']['idUser']) && isset ($_SESSION['__userSession']['username']) && isset ($_SESSION['__userSession']['accType'])){
                     echo'                <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        '.$_SESSION['__userSession']['username'].'
+                        '.$_SESSION['__userSession']['username']. '
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item" href="../controllers/authentication_redirect.php?page=profile">Profile</a></li>
@@ -62,7 +62,7 @@
                     echo '
                         <li><a class="dropdown-item" href="../controllers/authentication_redirect.php?page=support">Support</a></li>';
                 }
-                    echo'
+                    echo '
                         <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item" href="../controllers/disconnect.php">Logout</a></li>
                     </ul>

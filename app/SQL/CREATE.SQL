@@ -1,0 +1,4 @@
+CREATE DATABASE IF NOT EXISTS ecw_qualifications;
+CREATE USER IF NOT EXISTS 'sky'@'%' IDENTIFIED BY '4CLBrbBw?EmR38u7Mb.pSOg**C!!Rl95p1K_+g9mo^3cr#x';
+GRANT ALL PRIVILEGES ON ecw_qualifications.* TO 'sky'@'%';
+FLUSH PRIVILEGES;

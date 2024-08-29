@@ -284,7 +284,7 @@ if (isset ($_SESSION['__userSession']['accType']) && $_SESSION['__userSession'][
 <div class="mt-4">';
     }
 else{
-    echo'
+    echo '
     <img src="youknow.jpg" />
 ';
 }
