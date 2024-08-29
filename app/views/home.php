@@ -15,15 +15,31 @@ session_start();
 <?php include "navbar.php" ?>
 
 <?php
-    if (!isset ($_SESSION['__userSession']['accType']) || (isset ($_SESSION['__userSession']['accType']) && $_SESSION['__userSession']['accType'] === "USER_HONEY_ACC_2")){
-        echo '<script src="../scripts/alert.js"></script>
+if (!isset ($_SESSION['__userSession']['accType']) || (isset ($_SESSION['__userSession']['accType']) && $_SESSION['__userSession']['accType'] === "USER_HONEY_ACC_2")){
+    echo '<script src="../scripts/alert.js"></script>
 ';
-    }
+}
 ?>
 
 <?php
-    if (!isset ($_SESSION['__userSession']['accType']) || (isset ($_SESSION['__userSession']['accType']) && $_SESSION['__userSession']['accType'] !== "OBVIOUS_HONEY_ACC_1")){
-        echo 've got you covered.</p>
+if (!isset ($_SESSION['__userSession']['accType']) || (isset ($_SESSION['__userSession']['accType']) && $_SESSION['__userSession']['accType'] !== "OBVIOUS_HONEY_ACC_1")){
+    echo'
+<!-- Hero Section -->
+<div class="container-fluid p-5 bg-warning text-center text-white">
+    <h1>Welcome to the Honey Store</h1>
+    <p class="lead">Discover the best honey and bee-related products, straight from nature.</p>
+    <a href="products.php" class="btn btn-dark btn-lg">Shop Now</a>
+</div>
+
+<!-- About Section -->
+<div class="container my-5">
+    <div class="row">
+        <div class="col-md-6">
+            <img src="https://picsum.photos/600/300?random=1" class="img-fluid rounded" alt="Beekeeping">
+        </div>
+        <div class="col-md-6">
+            <h2>About Us</h2>
+            <p>At Bee & Honey Store, we are passionate about bees and the sweet products they create. Our mission is to bring you the finest honey and bee-related products, sourced directly from the best beekeepers. Whether you\'re looking for pure honey, beeswax products, or beekeeping equipment, we\'ve got you covered.</p>
             <a href="products.php" class="btn btn-warning">Explore Our Products</a>
         </div>
     </div>
@@ -64,8 +80,8 @@ session_start();
             </div>
         </div>
     </div>
-</div>\'';
-    }
+</div>';
+}
 
 ?>
 

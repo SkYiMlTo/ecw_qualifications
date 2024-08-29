@@ -6,13 +6,16 @@ if(!isset($_SESSION))
 
 function is_account_authorized(): void
 {
+    if($_SESSION['__userSession']['accType'] === "ADMIN_ACC" || $_SESSION['__userSession']['accType'] === "ADMIN_HONEY_ACC_0") {
+        return;
+    }
+
     if ($_SESSION['__userSession']['accType'] === "ADMIN_HONEY_ACC_1") {
         header('Location: ../not-views/admin.php');
-    } elseif ($_SESSION['__userSession']['accType'] === "ADMIN_HONEY_ACC_0"){
-
-    }else{
-        header('Location: ../views/403.php');
+        return;
     }
+
+    header('Location: ../views/403.php');
 }
 
 is_account_authorized();
