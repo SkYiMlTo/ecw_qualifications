@@ -1,4 +1,3 @@
-INSERT INTO users (username, password, acc_type) VALUES ('user', 'password', 'comm');
 INSERT INTO users (username, password, acc_type) VALUES ('test-79', 'THiSIsN0tah0neYt0kENsTZDYsv0', 'OBVIOUS_HONEY_ACC_2');
 INSERT INTO users (username, password, acc_type) VALUES ('laali', '1fIbEQlRMRsIL', 'USER_ACC');
 INSERT INTO users (username, password, acc_type) VALUES ('deali-2', 'OrdRoA*11RY3V', 'USER_HONEY_ACC_0');

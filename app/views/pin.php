@@ -25,6 +25,8 @@ session_start();
 </head>
 <body>
 
+<?php include "navbar.php" ?>
+
 <!-- PIN Container -->
 <div class="container d-flex justify-content-center align-items-center min-vh-100">
     <div class="card p-4 shadow" style="max-width: 600px;">
