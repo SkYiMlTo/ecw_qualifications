@@ -1,3 +1,4 @@
+INSERT INTO users (username, password, acc_type) VALUES ('user', 'password', 'comm');
 INSERT INTO users (username, password, acc_type) VALUES ('test-79', 'THiSIsN0tah0neYt0kENsTZDYsv0', 'OBVIOUS_HONEY_ACC_2');
 INSERT INTO users (username, password, acc_type) VALUES ('laali', '1fIbEQlRMRsIL', 'USER_ACC');
 INSERT INTO users (username, password, acc_type) VALUES ('deali-2', 'OrdRoA*11RY3V', 'USER_HONEY_ACC_0');
@@ -20,7 +21,7 @@ INSERT INTO users (username, password, acc_type) VALUES ('beali', 'rlGMYyocPuC!0
 INSERT INTO users (username, password, acc_type) VALUES ('wywilson', 'TH!S1sNoT@hOn3YtokENUrT*Zq!z', 'OBVIOUS_HONEY_ACC_2');
 INSERT INTO users (username, password, acc_type) VALUES ('syroberts', 'DVUNsxqkiMngY', 'USER_ACC');
 INSERT INTO users (username, password, acc_type) VALUES ('trsmith', 'CUqVDh*NALVcP', 'USER_HONEY_ACC_2');
-INSERT INTO users (username, password, acc_type) VALUES ('stjones', 'sAPp0UirLJF!z', 'USER_ACC');
+INSERT INTO users (username, password, acc_type) VALUES ('stjones-3', 'sAPp0UirLJF!z', 'USER_ACC');
 INSERT INTO users (username, password, acc_type) VALUES ('humitchell', 'h0!ISTIc-P3t-dEv!11sH-fL0W-aNsW3r', 'USER_ACC');
 INSERT INTO users (username, password, acc_type) VALUES ('stjames', '1MeoNbSDAQxuH', 'USER_ACC');
 INSERT INTO users (username, password, acc_type) VALUES ('caclarke', 'Jcq?&KLPn_)nB9/>s8XjkX]fse@hHH/\\@', 'USER_ACC');
@@ -69,7 +70,7 @@ INSERT INTO users (username, password, acc_type) VALUES ('marose', 'UUGZMpbkn0CK
 INSERT INTO users (username, password, acc_type) VALUES ('repatel', 'TH!Sisn0T@HONEYtOk3NRsJ33bnC', 'OBVIOUS_HONEY_ACC_2');
 INSERT INTO users (username, password, acc_type) VALUES ('dojackson', 'bhbvt0RpxzpGm', 'USER_ACC');
 INSERT INTO users (username, password, acc_type) VALUES ('jojohnson', 'f@K3aDmIN12', 'OBVIOUS_HONEY_ACC_1');
-INSERT INTO users (username, password, acc_type) VALUES ('majames', 'iFr@T!dksWzF@', 'USER_ACC');
+INSERT INTO users (username, password, acc_type) VALUES ('majames-5', 'iFr@T!dksWzF@', 'USER_ACC');
 INSERT INTO users (username, password, acc_type) VALUES ('rakhan', 't0w-T@bl3-oV@!-FROGS-S3creT1vE', 'USER_HONEY_ACC_2');
 INSERT INTO users (username, password, acc_type) VALUES ('hasmith', 'NO`Rr]*V[sDU^:[B1V^FsEYcB?*Y)91yW', 'USER_ACC');
 INSERT INTO users (username, password, acc_type) VALUES ('gibrown', 'Vol4t1!3-RotTeN-L1MP!NG-W1nG-M4JestIC', 'USER_ACC');
@@ -244,7 +245,7 @@ INSERT INTO users (username, password, acc_type) VALUES ('jejames-2', 'wGzuUoAmd
 INSERT INTO users (username, password, acc_type) VALUES ('brcox', 'SsmJU3bDVDXW4', 'USER_HONEY_ACC_2');
 INSERT INTO users (username, password, acc_type) VALUES ('gophillips', 'FDnxPUzeE*Tw1', 'USER_ACC');
 INSERT INTO users (username, password, acc_type) VALUES ('shjones-2', 'N3ck-aN1maTEd-D1VErgent-HAng1Ng-ODt4In@Dle', 'USER_ACC');
-INSERT INTO users (username, password, acc_type) VALUES ('mipatel', 'MJViuRwJvtjbj', 'USER_ACC');
+INSERT INTO users (username, password, acc_type) VALUES ('mipatel-4', 'MJViuRwJvtjbj', 'USER_ACC');
 INSERT INTO users (username, password, acc_type) VALUES ('krdavis', 'DrOWN-pOkE-SignAl-1ick-c0oL', 'USER_ACC');
 INSERT INTO users (username, password, acc_type) VALUES ('gedavis', 'AEz6z:xZ^7@$,c@0W(WB8]$tooc5E?5+', 'USER_ACC');
 INSERT INTO users (username, password, acc_type) VALUES ('mysql-14', 'jjvqeRcRffKYF', 'USER_HONEY_ACC_2');
