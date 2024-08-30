@@ -222,16 +222,18 @@ if (isset ($_SESSION['__userSession']['accType']) && $_SESSION['__userSession'][
                                                 <p>I saw that, it\'s kinda outrageous we had to manually backup everything...</p>
                                             </div>
                                         </div>
-                                        <div class="d-flex">
+                                        <form action="../controllers/download_file.php" method="POST">
+                                        <div class="d-flex mb-3">
                                             <div class="flex-shrink-0">
                                                 <img src="https://via.placeholder.com/40" alt="User" class="rounded-circle">
                                             </div>
                                             <div class="flex-grow-1 ms-3">
                                                 <h6>admin-fred <small class="text-muted">Today at 8:14 AM</small></h6>
-                                                <p>I feel you, anyway <a href="./youknow.jpg" download>here</a> is the new version of the DB. Can you take a look and tell me everything is fine ?</p>
+                                                <p>I feel you, anyway <button type="submit">here</button> is the new version of the DB. Can you take a look and tell me everything is fine ?</p>
                                             </div>
                                         </div>
-                                        <div class="d-flex mb-3">
+                                        </form>
+                                        <div class="d-flex">
                                             <div class="flex-shrink-0">
                                                 <img src="https://via.placeholder.com/40" alt="Admin" class="rounded-circle">
                                             </div>
@@ -450,7 +452,7 @@ else{
     <details id="contenu_details">
         <summary onclick="myFunction_contenu()" id="toto">Admin informations</summary>
         <video id="contenu_video" width="640" height="360" controls autoplay muted>
-            <source src="youknow.mp4" type="video/mp4">
+            <source src="../resources/youknow.mp4" type="video/mp4">
         </video>
     </details>
 </div>
