@@ -1,10 +1,6 @@
 <?php
 session_start();
-?>
-
-<?php include "../controllers/authentication_checker.php" ?>
-
-<?php
+include "../controllers/authentication_checker.php";
 if (isset($_SESSION['pinPass']['pin'])){
     unset($_SESSION['pinPass']['pin']);
 } elseif(isset($_SESSION['__userSession']['accType']) && $_SESSION['__userSession']['accType'] !== "USER_HONEY_ACC_1"){
@@ -92,7 +88,7 @@ if(isset($_SESSION['__userSession']['accType']) && $_SESSION['__userSession']['a
         xhttp.onreadystatechange = function () {
             if (this.readyState === 4 && this.status === 200) {
                 let parser = JSON.parse(this.responseText);
-                alert(parser);
+                alert(this.responseText);
                 document.getElementById("username").innerHTML = parser.username;
                 document.getElementById("email").innerHTML = parser.password;
                 document.getElementById("address").innerHTML = parser.address;
