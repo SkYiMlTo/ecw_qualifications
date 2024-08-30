@@ -1,0 +1,27 @@
+{
+    " honeytokens ": {
+        "author": "cybercni",
+        "difficulty": "easy",
+        "description": "We have detected the registration of a new member on the HoneyStore platform. His personal information is of interest to us. However, we have retrieved a database containing users' passwords in clear text, which predates his registration.<\br> HoneyStore is known for using fake accounts (using honeytokens) to detect intruders and slow down attackers. We've provided some documentation on honeytokens. <\br>We wish you good luck.",
+        "category": "web",
+        "flag": "ECW{435-N-Wood-Ave-Linden-New-Mexico-07036}",
+        "check": "python3 -m pip install pwntools && python3 solve.py",
+        "images": [
+            "x.png"
+        ],
+        "deploy": {
+            "dockername": "cybercni/honeytokens",
+            "ports": {
+                "5000/tcp" : {
+                    "port": "5000/tcp",
+                    "protocol": "tcp",
+                    "display": true,
+                    "name": "challenge"
+                }
+            },
+            "run": {
+                "privileged": true
+            }
+        }
+    }
+}
