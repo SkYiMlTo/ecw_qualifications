@@ -7,6 +7,12 @@ RUN apt-get update \
     && docker-php-ext-install zip mysqli pdo pdo_mysql \
     && docker-php-ext-enable mysqli
 
+# Copy custom configuration file
+COPY ./app/apache.conf /etc/apache2/conf-enabled/custom.conf
+
+# Optional: Ensure the Apache configuration is correct
+RUN apachectl configtest
+
 # Configure Apache to work with PHP
 RUN a2enmod rewrite
 
