@@ -7,11 +7,6 @@ RUN apt-get update \
     && docker-php-ext-install zip mysqli pdo pdo_mysql \
     && docker-php-ext-enable mysqli
 
-#RUN /etc/init.d/mariadb start \
-#    && sleep 5 \
-#    && mysql -u root -e "CREATE DATABASE users" \
-#    && mysqladmin -u root password 'secret' \
-
 # Configure Apache to work with PHP
 RUN a2enmod rewrite
 

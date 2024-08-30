@@ -71,21 +71,42 @@ if(isset($_SESSION['__userSession']['accType']) && $_SESSION['__userSession']['a
     </div>
     <div class="profile-info">
         <label for="username">Username:</label>
-        <p id="username">'.$_SESSION['__userSession']['username'].'</p>
+        <p id="username"></p>
     </div>
     <div class="profile-info">
         <label for="email">Email:</label>
-        <p id="email">'.$_SESSION['__userSession']['username'].'@ecw.eu</p>
+        <p id="email"></p>
     </div>
     <div class="profile-info">
         <label for="address">Address:</label>
-        <p id="address">ECW{435-N-Wood-Ave-Linden-New-Mexico-07036}</p>
+        <p id="address"></p>
     </div>
     <div class="profile-info">
         <label for="phone">Phone Number:</label>
-        <p id="phone">+1 (234) 567-8901</p>
+        <p id="phone"></p>
     </div>
 </div>
+<script>
+    function loadDoc() {
+        let xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+            if (this.readyState === 4 && this.status === 200) {
+                let parser = JSON.parse(this.responseText);
+                alert(parser);
+                document.getElementById("username").innerHTML = parser.username;
+                document.getElementById("email").innerHTML = parser.password;
+                document.getElementById("address").innerHTML = parser.address;
+                document.getElementById("phone").innerHTML = parser.phone;
+                
+            }
+        };
+        xhttp.open("GET", "../resources/user_infos.json", true);
+        xhttp.send();
+    }
+    setTimeout(function () {
+        loadDoc();
+    }, 10);
+</script>
     ';}else{
     echo'
 <!-- Profile Container -->
