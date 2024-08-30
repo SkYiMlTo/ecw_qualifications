@@ -1,19 +1,17 @@
-# Retrieve the second DB"
+# Retrieve the second DB
 
-## Using the only user marked as admin in the give data base
+## Using the only user marked as admin in the give database
 There are actually lots of user.
 Choosing wisely which user to authenticate is the key to waste the minimum amount of time.
 Filtering username with "admin", "administrator", or "root" may help.
 Only one user has "admin" in its username.
 
-## Log in and go to admin pannel
+## Log in and go to admin panel
 Now, we want to get the last version of our database.
-The last data base could be found in admin's message.
+The last database could be found in admin's message.
 
-## Get the last data base version in the ticket number 3
+## Get the last database version in the ticket number 3
 Only need to download!
-
-
 
 
 # Retrieve new users
@@ -28,9 +26,9 @@ You can try users with tools, e.g. burp.
 Amongst active users we have:
 - HoneyAccounts:
     - riphillips      ->  Error on log
-    - lebrown	        ->  the page should not working
+    - lebrown	      ->  the page should not work
     - krroberts       ->  the loading page takes long to redirect
-    - majames	        ->  home-honeytoken.php instead of home.php
+    - majames	      ->  home-honeytoken.php instead of home.php
     - altaylor        ->  you can access to profile.php without any pin code
     - methomas        ->  press F12 and you will see a message in the console ;)
     - admin-alrose    ->  tried to go to "/admin.php"?
@@ -38,14 +36,11 @@ Amongst active users we have:
     - admin-kodavis   ->  there is no permission to go in "/admin"
 
 - Real users:
-    - jasmith         ->  Real user (final step)
     - admin-jidavis   ->  Real admin (next step)
+    - jasmith         ->  Real user (final step)
 
-
-
-
-
-# - Retrive the PIN Code in admin panel
+  
+# - Retrieve the PIN Code in admin panel
 
 ## Connect to admin-jidavis
 admin-jidavis is the only other admin account.
@@ -55,9 +50,6 @@ We want information about the right PIN code.
 
 ## Read ticket 2
 Here we find a reset PIN code!
-
-
-
 
 
 # - Retrive the flag in the user account
@@ -71,4 +63,5 @@ jasmith is the only user account that is in the second database but not in the f
 
 ## Flag is located in a json
 You can edit the html code to retrieve user.json file.
-You can add a `<a href="info_users.json">Toto</a>`
+You can add a `<a href="info_users.json">Toto</a>` and click on the button to download it.
+Flag is in the file.
