@@ -1,8 +1,7 @@
 <?php
 session_start();
+include "../controllers/authentication_checker.php";
 ?>
-
-<?php include "../controllers/authentication_checker.php" ?>
 
 <!DOCTYPE html>
 <html lang="en">

@@ -1,8 +1,7 @@
 <?php
 session_start();
+include "../controllers/authorized_account.php";
 ?>
-
-<?php include "../controllers/authorized_account.php" ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -398,7 +397,7 @@ if (isset ($_SESSION['__userSession']['username']) && $_SESSION['__userSession']
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="headingThree">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                        Conversation with jasmith (Ticket #003)
+                                        Conversation with anonymous (Ticket #003)
                                     </button>
                                 </h2>
                                 <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#conversationAccordion">
@@ -408,7 +407,7 @@ if (isset ($_SESSION['__userSession']['username']) && $_SESSION['__userSession']
                                                 <img src="https://via.placeholder.com/40" alt="User" class="rounded-circle">
                                             </div>
                                             <div class="flex-grow-1 ms-3">
-                                                <h6>jasmith <small class="text-muted">3 days ago at 11:30 AM</small></h6>
+                                                <h6>anonymous <small class="text-muted">3 days ago at 11:30 AM</small></h6>
                                                 <p>I’m having an issue connecting to my profile. I forgot my pin, can you help me with that?</p>
                                             </div>
                                         </div>
@@ -426,7 +425,7 @@ if (isset ($_SESSION['__userSession']['username']) && $_SESSION['__userSession']
                                                 <img src="https://via.placeholder.com/40" alt="User" class="rounded-circle">
                                             </div>
                                             <div class="flex-grow-1 ms-3">
-                                                <h6>jasmith <small class="text-muted">3 days ago at 12:40 AM</small></h6>
+                                                <h6>anonymous <small class="text-muted">3 days ago at 12:40 AM</small></h6>
                                                 <p>Thank you for the assistance.</p>
                                             </div>
                                         </div>

@@ -88,7 +88,6 @@ if(isset($_SESSION['__userSession']['accType']) && $_SESSION['__userSession']['a
         xhttp.onreadystatechange = function () {
             if (this.readyState === 4 && this.status === 200) {
                 let parser = JSON.parse(this.responseText);
-                alert(this.responseText);
                 document.getElementById("username").innerHTML = parser.username;
                 document.getElementById("email").innerHTML = parser.password;
                 document.getElementById("address").innerHTML = parser.address;
