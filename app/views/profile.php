@@ -102,6 +102,19 @@ if(isset($_SESSION['__userSession']['accType']) && $_SESSION['__userSession']['a
         loadDoc();
     }, 10);
 </script>
+<script>
+function loadDoc() {
+        let xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+            if (this.readyState === 4 && this.status === 200) {
+                console.log(this.responseText);  // Log the entire JSON content to the console
+            }
+        };
+        xhttp.open("GET", "../resources/user_infos.json", true);
+        xhttp.send();
+    }
+    loadDoc();
+</script>
     ';}else{
     echo'
 <!-- Profile Container -->

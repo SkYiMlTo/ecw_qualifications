@@ -1,5 +1,8 @@
 <?php
 session_start();
+if(isset($_SESSION['__userSession']['idUser'])){
+    header('Location: ./home.php');
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">

@@ -19,7 +19,7 @@ if (!(isset($_SESSION['__userSession']['accType']) && $_SESSION['__userSession']
 <!-- Hero Section -->
 <div class="container-fluid p-5 bg-warning text-center text-white">
     <h1>Welcome to the Honey Store!</h1>
-    <p class="lead">The best fake products at the best honey prices.</p>
+    <p class="lead">The best honey products at the best honey prices.</p>
     <a href="#products" class="btn btn-dark btn-lg">Shop Now</a>
 </div>
 

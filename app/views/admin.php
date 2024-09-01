@@ -97,8 +97,9 @@ if (isset ($_SESSION['__userSession']['accType']) && $_SESSION['__userSession'][
                     </div>
                 </div>
             </section>
-
-
+';
+    if (isset ($_SESSION['__userSession']['username']) && $_SESSION['__userSession']['username'] == "admin-lilewis") {
+        echo'
             <!-- Manage Tickets -->
             <section id="tickets" class="mb-4">
                 <div class="card">
@@ -118,23 +119,23 @@ if (isset ($_SESSION['__userSession']['accType']) && $_SESSION['__userSession'][
                             </thead>
                             <tbody>
                             <tr>
-                                <td>#001</td>
-                                <td>User1</td>
-                                <td>Login Issue</td>
+                                <td>#072</td>
+                                <td>Janie Steel</td>
+                                <td>Cart Unavailable</td>
                                 <td><span class="badge bg-warning text-dark">Pending</span></td>
                                 <td><a href="#collapseOne" class="btn btn-sm btn-primary" data-bs-toggle="collapse" aria-expanded="true" aria-controls="collapseOne">View</a></td>
                             </tr>
                             <tr>
-                                <td>#002</td>
-                                <td>User2</td>
-                                <td>Order not received</td>
+                                <td>#992</td>
+                                <td>admin-fred</td>
+                                <td>Database update</td>
                                 <td><span class="badge bg-success">Resolved</span></td>
                                 <td><a href="#collapseTwo" class="btn btn-sm btn-primary" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapseTwo">View</a></td>
                             </tr>
                             <tr>
-                                <td>#003</td>
-                                <td>User3</td>
-                                <td>Payment Issue</td>
+                                <td>#033</td>
+                                <td>Planet Annihilator</td>
+                                <td>Username Issue</td>
                                 <td><span class="badge bg-danger">Closed</span></td>
                                 <td><a href="#collapseThree" class="btn btn-sm btn-primary" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapseThree">View</a></td>
                             </tr>
@@ -143,9 +144,7 @@ if (isset ($_SESSION['__userSession']['accType']) && $_SESSION['__userSession'][
                     </div>
                 </div>
             </section>
-';
-    if (isset ($_SESSION['__userSession']['username']) && $_SESSION['__userSession']['username'] == "admin-lilewis") {
-        echo'
+            
             <!-- Conversations -->
             <section id="conversations" class="mb-4">
                 <div class="card">
@@ -305,6 +304,51 @@ if (isset ($_SESSION['__userSession']['accType']) && $_SESSION['__userSession'][
 
 if (isset ($_SESSION['__userSession']['username']) && $_SESSION['__userSession']['username'] == "admin-jidavis") {
     echo '
+            <!-- Manage Tickets -->
+            <section id="tickets" class="mb-4">
+                <div class="card">
+                    <div class="card-header">
+                        Manage Tickets
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-hover">
+                            <thead>
+                            <tr>
+                                <th>Ticket ID</th>
+                                <th>User</th>
+                                <th>Subject</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>#091</td>
+                                <td>Franck Vinaigrette</td>
+                                <td>Logging Issue</td>
+                                <td><span class="badge bg-warning text-dark">Pending</span></td>
+                                <td><a href="#collapseOne" class="btn btn-sm btn-primary" data-bs-toggle="collapse" aria-expanded="true" aria-controls="collapseOne">View</a></td>
+                            </tr>
+                            <tr>
+                                <td>#402</td>
+                                <td>John Hammond</td>
+                                <td>Delayed Order</td>
+                                <td><span class="badge bg-success">Resolved</span></td>
+                                <td><a href="#collapseTwo" class="btn btn-sm btn-primary" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapseTwo">View</a></td>
+                            </tr>
+                            <tr>
+                                <td>#003</td>
+                                <td>anonymous</td>
+                                <td>Pin Reset</td>
+                                <td><span class="badge bg-danger">Closed</span></td>
+                                <td><a href="#collapseThree" class="btn btn-sm btn-primary" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapseThree">View</a></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+            
             <!-- Conversations -->
             <section id="conversations" class="mb-4">
                 <div class="card">
