@@ -4,7 +4,7 @@
 There are actually lots of user.
 Choosing wisely which user to authenticate is the key to waste the minimum amount of time.
 Filtering username with "admin", "administrator", or "root" may help.
-Only one user has "admin" in its username.
+Only one user has "admin" in its username: admin-lilewis.
 
 ## Log in and go to admin panel
 Now, we want to get the last version of our database.
@@ -29,7 +29,7 @@ Amongst active users we have:
     - lebrown	      ->  the page should not work
     - krroberts       ->  the loading page takes long to redirect
     - majames	      ->  home-honeytoken.php instead of home.php
-    - altaylor        ->  you can access to profile.php without any pin code
+    - altaylor        ->  you can access to profile.php without any pin code (with no flag)
     - methomas        ->  press F12 and you will see a message in the console ;)
     - admin-alrose    ->  tried to go to "/admin.php"?
     - admin-romason   ->  the admin panel is in "/not-views/admin" instead of "/views/admin"
