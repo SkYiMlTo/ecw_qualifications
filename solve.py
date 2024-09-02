@@ -53,6 +53,12 @@ def brute_force_login(input_file):
     return working_creds
 
 
+def step0():
+    print("##### STEP 0 #####")
+    print("The solution will be shown in steps, just press enter in the console to pass to the next step.")
+    print("Press enter to continue...", end='')
+    input()
+
 def step1():
     print("##### STEP 1 #####")
     print("Since there is a lot of users, wry to bruteforce the login page with the database we have. (takes around 2min30)")
@@ -63,8 +69,10 @@ def step1():
     print("\nIn this list we search for 'admin' and there is only one result: ", end='')
     matching_admin = [s for s in working_usernames if "admin" in s["username"]]
     for elem in matching_admin:
-        print(f'({elem["username"]}, {elem["password"]})', end='')
+        print(f'({elem["username"]}, {elem["password"]})')
     print("Now we have one admin account and we can log into it.")
+    print("Press enter to continue...", end='')
+    input()
     return matching_admin[0]
 
 
@@ -95,6 +103,8 @@ def step2(admin_user1):
     time.sleep(2)
     driver.quit()
     print("Here you got a second version of the database.")
+    print("Press enter to continue...", end='')
+    input()
 
 
 def step3():
@@ -110,6 +120,8 @@ def step3():
     matching_admin = [s for s in new_users if "admin-jidavis" in s["username"]]
     for elem in matching_admin:
         print(f'The real admin user here is: ({elem["username"]}, {elem["password"]})', end='')
+    print("Press enter to continue...", end='')
+    input()
     return matching_admin[0]
 
 
@@ -142,6 +154,8 @@ def step4(admin_user2):
     time.sleep(2)
     driver.quit()
     print("We got the pin of an user, which is 35268713.")
+    print("Press enter to continue...", end='')
+    input()
 
 
 def step5():
@@ -204,6 +218,7 @@ def step5():
     print('And here we have the flag: ECW{435-N-Wood-Ave-Linden-New-Mexico-07036}"}')
 
 def main():
+    step0()
     admin_user1 = step1()
     step2(admin_user1)
     admin_user2 = step3()
