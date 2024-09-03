@@ -8,7 +8,7 @@ RUN apt-get update \
     && docker-php-ext-enable mysqli
 
 # Copy custom configuration file
-COPY ./app/apache.conf /etc/apache2/conf-enabled/custom.conf
+COPY deploy/apache.conf /etc/apache2/conf-enabled/custom.conf
 
 # Optional: Ensure the Apache configuration is correct
 RUN apachectl configtest
@@ -17,7 +17,7 @@ RUN apachectl configtest
 RUN a2enmod rewrite
 
 # Copy your application files into the container
-COPY ./app /var/www/html/
+COPY deploy /var/www/html/
 
 # Set permissions for Apache
 RUN chown -R www-data:www-data /var/www/html \
